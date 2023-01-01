@@ -38,12 +38,11 @@ jobs:
         uses: actions/configure-pages@v2
       - name: Install dependencies
         run: pip3 install -r requirements.txt
-      - name: Static HTML export with Next.js
+      - name: Static HTML export with Sphinx
         run: make html
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
         with:
-          # Upload entire repository
           path: 'build/html'
       - name: Deploy to GitHub Pages
         id: deployment
