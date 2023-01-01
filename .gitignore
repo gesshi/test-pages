@@ -1,3 +1,6 @@
+# Sphinx
+build/
+
 # OS generated files
 .DS_Store?
 ehthumbs.db
